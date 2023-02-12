@@ -1,0 +1,7 @@
+[user]
+	name = Matthew Slauson
+	email = matthew@slauson.io
+[credential]
+	helper = store
+[init]
+	defaultBranch = main

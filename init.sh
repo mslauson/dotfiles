@@ -6,7 +6,7 @@ do
     ln -s $currentPath/.config/$dir ~/.config/$dir
 done
 
-for file in .p10k.zsh .zshrc
+for file in .p10k.zsh .zshrc .gitconfig
 do
     rm -rf ~/$file
     ln -s $currentPath/$file ~/$file
