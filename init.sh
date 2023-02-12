@@ -12,5 +12,6 @@ do
     ln -s "$currentPath"/$item ~/$item
 done
 
+rm -rf ~/.wallpapers
 mkdir ~/.wallpapers
 ln -s "$currentPath"/wallpapers/* ~/.wallpapers
