@@ -6,8 +6,8 @@ do
     ln -s $currentPath/.config/$dir ~/.config/$dir
 done
 
-for file in .p10k.zsh .zshrc .gitconfig
+for item in .p10k.zsh .zshrc .gitconfig .fonts .swt .themes
 do
-    rm -rf ~/$file
-    ln -s $currentPath/$file ~/$file
+    rm -rf ~/$item
+    ln -s $currentPath/$item ~/$item
 done
