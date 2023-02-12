@@ -5,3 +5,9 @@ do
     rm -rf ~/.config/$dir
     ln -s $currentPath/.config/$dir ~/.config/$dir
 done
+
+for file in .p10k.zsh .zshrc
+do
+    rm -rf ~/$file
+    ln -s $currentPath/$file ~/$file
+done
