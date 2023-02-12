@@ -3,7 +3,7 @@
 		"layer": "top", // Waybar at top layer
 		"position": "top", // top|left|bottom|right
 		"output": "DP-2", // BOTTOM MONITOR
-		"width": 5080,
+		"width": 3420,
 		"modules-center": [
 			"hyprland/window"
 		],
@@ -185,7 +185,7 @@
 		"layer": "top", // Waybar at top layer
 		"position": "top", // top|left|bottom|right
 		"output": "DP-1", // TOP MONITOR
-		"width": 1880,
+		"width": 2500,
 		"modules-left": [
 			"custom/wlogout",
 			"wlr/workspaces"
