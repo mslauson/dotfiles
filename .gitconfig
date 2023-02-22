@@ -1,9 +1,0 @@
-[user]
-	name = Matthew Slauson
-	email = matthew@slauson.io
-[credential]
-	helper = store
-[init]
-	defaultBranch = main
-[url "https://mslauson:7c766a0672c363f3ce57f4d31470366bb3350903@gitea.slauson.io"]
-	insteadOf = https://gitea.slauson.io
