@@ -310,16 +310,31 @@ set $ws10 "10"
 
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws1
-assign [class="Thunar"] $ws3
-assign [class="thunderbird"] $ws4
+assign [class="Thunar"] $ws2
+assign [class="firefoxdeveloperedition"] $ws3
+assign [class="jetbrains-idea"] $ws4
+assign [class="jetbrains-goland"] $ws4
+assign [class="jetbrains-webstorm"] $ws4
+assign [class="jetbrains-fleet"] $ws4
+assign [class="code-oss"] $ws4
+assign [class="thunderbird"] $ws5
 assign [class="Signal"] $ws5
-assign [class="TelegramDesktop"] $ws5
+assign [class="Steam"] $ws6
+assign [class="net-runelite-client-RuneLite"] $ws6
 
 # automatic set focus new window if it opens on another workspace than the current:
-for_window [class=Xfce4-terminal] focus
+for_window [class=kitty] focus
 for_window [class=Thunar] focus
+for_window [class=firefoxdeveloperedition] focus
+for_window [class=jetbrains-idea] focus
+for_window [class=jetbrains-goland] focus
+for_window [class=jetbrains-webstorm] focus
+for_window [class=jetbrains-fleet] focus
+for_window [class=code-oss] focus
 for_window [class=Thunderbird] focus
-for_window [class=TelegramDesktop] focus
+for_window [class=Signal] focus
+for_window [class=Steam] focus
+for_window [class=net-runelite-client-RuneLite] focus
 
 ##############
 # compositor #
@@ -369,7 +384,7 @@ exec --no-startup-id dex --autostart --environment i3
 #exec --no-startup-id sh /usr/share/endeavouros/scripts/welcome --startdelay=3 
 
 # num lock activated
-#exec --no-startup-id numlockx on
+exec --no-startup-id numlockx on
 
 # configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK in this example)
 #exec --no-startup-id setxkbmap -layout 'us,sk' -variant altgr-intl,qwerty -option 'grp:alt_caps_toggle'
@@ -413,9 +428,10 @@ exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 #exec_always --no-startup-id autotiling
 
 # Autostart apps as you like
-#exec --no-startup-id sleep 2 && xfce4-terminal
-#exec --no-startup-id sleep 7 && firefox https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/force-knowledge.md
-#exec --no-startup-id sleep 3 && thunar
+exec --no-startup-id sleep 2 && kitty
+exec --no-startup-id sleep 7 && firefox-developer-edition https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/force-knowledge.md
+exec --no-startup-id sleep 3 && thunar
+exec --no-startup-id sleep 3 && signal-desktop
 
 ###############
 # system tray #
