@@ -264,6 +264,8 @@ return {
       })
     end,
   },
-{ "catppuccin/nvim", name = "catppuccin" }
+{ "catppuccin/nvim", name = "catppuccin" },
+{"nvim-lua/plenary.nvim"},
+{"akinsho/flutter-tools.nvim"}
 
 }
