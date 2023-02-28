@@ -1,6 +1,5 @@
 #!/bin/sh
 
-sudo pacman -S picom polybar kitty nvim ranger rofi
 
 #yay -S cava musikcube
 
