@@ -12,7 +12,6 @@ return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
   { "akinsho/flutter-tools.nvim", dependencies = "nvim-lua/plenary.nvim" },
-
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
