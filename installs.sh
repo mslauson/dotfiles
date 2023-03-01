@@ -1,3 +1,3 @@
 sudo pacman -S i3 picom polybar kitty nvim ranger rofi
 
-yay -S cava autotiling
+yay -S cava autoti ing
