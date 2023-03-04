@@ -290,7 +290,7 @@ bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "Dev"
-set $ws3 "3"
+set $ws3 "Social"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -309,7 +309,6 @@ set $ws10 "10"
 #workspace $ws5 output DisplayPort-1
 
 # bind program to workspace and focus to them on startup:
-assign [class="kitty"] $ws1
 assign [class="Thunar"] $ws2
 assign [class="jetbrains-idea"] $ws4
 assign [class="jetbrains-goland"] $ws4
@@ -322,7 +321,6 @@ assign [class="Steam"] $ws6
 assign [class="net-runelite-client-RuneLite"] $ws6
 
 # automatic set focus new window if it opens on another workspace than the current:
-for_window [class=kitty] focus
 for_window [class=Thunar] focus
 for_window [class=jetbrains-idea] focus
 for_window [class=jetbrains-goland] focus
