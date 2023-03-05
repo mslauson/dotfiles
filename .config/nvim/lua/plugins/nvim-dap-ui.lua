@@ -1,8 +1,11 @@
 return {
   {
     "rcarriga/nvim-dap-ui",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+    },
     config = function()
-      require("nvim-dap-ui").setup({
+      require("dapui").setup({
         icons = {
           expanded = "▾",
           collapsed = "▸",
