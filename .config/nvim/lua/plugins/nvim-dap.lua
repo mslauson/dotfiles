@@ -13,12 +13,11 @@ return {
         {
           type = "dart",
           request = "launch",
-          name = "Launch Dart Program",
-          -- The nvim-dap plugin populates this variable with the filename of the current buffer
-          program = "${file}",
-          -- The nvim-dap plugin populates this variable with the editor's current working directory
+          name = "Launch flutter",
+          dartSdkPath = os.getenv("HOME") .. "/flutter/bin/cache/dart-sdk/",
+          flutterSdkPath = os.getenv("HOME") .. "/flutter",
+          program = "${workspaceFolder}/lib/main.dart",
           cwd = "${workspaceFolder}",
-          args = { "--help" }, -- Note for Dart apps this is args, for Flutter apps toolArgs
         },
       }
     end,
