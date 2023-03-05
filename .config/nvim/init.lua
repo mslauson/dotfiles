@@ -47,3 +47,6 @@ require("catppuccin").setup({
 vim.cmd.colorscheme("catppuccin")
 
 require("flutter-tools").setup({})
+require("mason-nvim-dap").setup({
+  ensure_installed = { "delve" },
+})
