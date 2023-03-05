@@ -45,19 +45,3 @@ require("catppuccin").setup({
 
 -- setup must be called before loading
 vim.cmd.colorscheme("catppuccin")
-
-require("flutter-tools").setup({})
-require("mason-nvim-dap").setup({
-  ensure_installed = { "delve" },
-})
-
-require("neodev").setup({
-  library = { plugins = { "nvim-dap-ui" }, types = true },
-  mappings = {
-    -- Use a table to apply multiple mappings
-    expand = { "<CR>", "<2-LeftMouse>" },
-    open = "o",
-    remove = "d",
-    edit = "e",
-  },
-})
