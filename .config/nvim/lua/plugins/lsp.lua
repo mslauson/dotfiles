@@ -7,7 +7,11 @@ return {
       { "neovim/nvim-lspconfig" }, -- Required
       { "williamboman/mason.nvim" }, -- Optional
       { "williamboman/mason-lspconfig.nvim" }, -- Optional
-
+      { "mfussenegger/nvim-jdtls" }, -- Optional
+      { "jose-elias-alvarez/null-ls.nvim" }, -- Optional
+      { "jose-elias-alvarez/nvim-lsp-ts-utils" }, -- Optional
+      { "ray-x/lsp_signature.nvim" }, -- Optional
+      { "williamboman/nvim-lsp-installer" },
       -- Autocompletion
       { "hrsh7th/nvim-cmp" }, -- Required
       { "hrsh7th/cmp-nvim-lsp" }, -- Required
