@@ -51,12 +51,6 @@ require("mason-nvim-dap").setup({
   ensure_installed = { "delve" },
 })
 
-require("mason-nvim-dap-virtual-text").setup({
-  enabled = true,
-  text = "⚡",
-  text_pos = "eol",
-})
-
 require("neodev").setup({
   library = { plugins = { "nvim-dap-ui" }, types = true },
   mappings = {
