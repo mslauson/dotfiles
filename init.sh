@@ -10,7 +10,7 @@ do
     ln -s "$currentPath"/.config/$dir ~/.config/$dir
 done
 
-for item in .p10k.zsh .zshrc .gitconfig .fonts .swt .themes
+for item in .p10k.zsh .zshrc .gitconfig .fonts .swt .themes flutter-debug.js
 do
     rm -rf ~/$item
     ln -s "$currentPath"/$item ~/$item
