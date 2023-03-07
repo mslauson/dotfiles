@@ -8,6 +8,7 @@ return {
         "neovim/nvim-lspconfig",
         ft = {
           "dockerfile",
+          "java",
           "javascript",
           "kotlin",
           "lua",
@@ -59,6 +60,9 @@ return {
             capabilities = lsp.cmp_capabilities,
           })
 
+          require("util.autocmd").create("lsp_define_java", "FileType", "java", function()
+            require("jdtls").start_or_attach(require("util.jdtls").jdtls_config())
+          end)
         end,
       }, -- Required
       {
