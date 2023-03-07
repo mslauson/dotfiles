@@ -2,3 +2,4 @@
 .gitsecret/keys/random_seed
 !*.secret
 .gitconfig
+.config/nvim/lazy-lock.json
