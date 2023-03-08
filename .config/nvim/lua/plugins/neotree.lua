@@ -11,6 +11,17 @@ return {
         filesystem = {
           follow_current_file = true,
           use_libuv_file_watcher = true,
+          filtered_items = {
+            always_show = {
+              ".gitinclude",
+              ".gitignore",
+              ".gitmodules",
+              ".config",
+              ".profile",
+              ".zshrc",
+              ".zshrc_history",
+            },
+          },
         },
       })
     end,
