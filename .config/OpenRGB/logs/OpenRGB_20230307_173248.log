@@ -1,0 +1,86 @@
+    OpenRGB v0.8
+    Commit:  from 
+    Launched: 20230307_173248
+====================================================================================================
+
+0     |Info:    Found file: default.orp attempting to validate header
+0     |Info:    Valid v3 profile found for default
+1001  |Info:    ------------------------------------------------------
+1001  |Info:    |               Start device detection               |
+1001  |Info:    ------------------------------------------------------
+1001  |Info:    Initializing HID interfaces: Success
+1008  |Info:    ------------------------------------------------------
+1008  |Info:    |             Detecting I2C interfaces               |
+1008  |Info:    ------------------------------------------------------
+1008  |Info:    Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1043:8877
+1008  |Info:    Registering I2C interface: /dev/i2c-1 Device 1002:73A4 Subsystem: 1002:0408
+1008  |Info:    Registering I2C interface: /dev/i2c-15 Device 1002:164E Subsystem: 1043:8877
+1008  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1008  |Info:    Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+1008  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1008  |Info:    Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+1008  |Info:    Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1008  |Info:    Registering I2C interface: /dev/i2c-9 Device 1002:73BF Subsystem: 1EAE:6701
+1008  |Info:    Registering I2C interface: /dev/i2c-7 Device 1002:73BF Subsystem: 1EAE:6701
+1008  |Info:    Registering I2C interface: /dev/i2c-5 Device 1002:73BF Subsystem: 1EAE:6701
+1008  |Info:    ------------------------------------------------------
+1008  |Info:    |               Detecting I2C devices                |
+1008  |Info:    ------------------------------------------------------
+1217  |Info:    ------------------------------------------------------
+1217  |Info:    |               Detecting I2C PCI devices            |
+1217  |Info:    ------------------------------------------------------
+1217  |Info:    ------------------------------------------------------
+1217  |Info:    |               Detecting HID devices                |
+1217  |Info:    ------------------------------------------------------
+1296  |Info:    [ASUS ROG STRIX B650E-F GAMING WIFI] Registering RGB controller
+1353  |Info:    [Corsair Lighting Node Core] Registering RGB controller
+1468  |Info:    [Corsair Commander Core] Registering RGB controller
+1468  |Info:    ------------------------------------------------------
+1468  |Info:    |              Detecting other devices               |
+1468  |Info:    ------------------------------------------------------
+1478  |Info:    ------------------------------------------------------
+1478  |Info:    |                Detection completed                 |
+1478  |Info:    ------------------------------------------------------
+1478  |Dialog:  <h2>WARNING:</h2><p>One or more I2C/SMBus interfaces failed to initialize.</p><p>RGB DRAM modules and some motherboards' onboard RGB lighting will not be available without I2C/SMBus.</p><p>On Linux, this is usually because the i2c-dev module is not loaded.  You must load the i2c-dev module along with the correct i2c driver for your motherboard.  This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p>
+80484 |Info:    Found file: default.orp attempting to validate header
+80484 |Info:    Valid v3 profile found for default
+81258 |Info:    Profile loading: Succeeded for ASUS ROG STRIX B650E-F GAMING WIFI @ HID: /dev/hidraw4
+81258 |Info:    Profile loading: Succeeded for Corsair Lighting Node Core @ HID: /dev/hidraw5
+81258 |Info:    Profile loading: Succeeded for Corsair Commander Core @ HID: /dev/hidraw6
+115591|Info:    ------------------------------------------------------
+115591|Info:    |               Start device detection               |
+115591|Info:    ------------------------------------------------------
+115591|Info:    Initializing HID interfaces: Success
+115597|Info:    ------------------------------------------------------
+115597|Info:    |             Detecting I2C interfaces               |
+115597|Info:    ------------------------------------------------------
+115597|Info:    Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1043:8877
+115597|Info:    Registering I2C interface: /dev/i2c-1 Device 1002:73A4 Subsystem: 1002:0408
+115597|Info:    Registering I2C interface: /dev/i2c-15 Device 1002:164E Subsystem: 1043:8877
+115597|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+115597|Info:    Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+115597|Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+115597|Info:    Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+115597|Info:    Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+115597|Info:    Registering I2C interface: /dev/i2c-9 Device 1002:73BF Subsystem: 1EAE:6701
+115597|Info:    Registering I2C interface: /dev/i2c-7 Device 1002:73BF Subsystem: 1EAE:6701
+115597|Info:    Registering I2C interface: /dev/i2c-5 Device 1002:73BF Subsystem: 1EAE:6701
+115597|Info:    ------------------------------------------------------
+115597|Info:    |               Detecting I2C devices                |
+115597|Info:    ------------------------------------------------------
+115805|Info:    ------------------------------------------------------
+115805|Info:    |               Detecting I2C PCI devices            |
+115805|Info:    ------------------------------------------------------
+115806|Info:    ------------------------------------------------------
+115806|Info:    |               Detecting HID devices                |
+115806|Info:    ------------------------------------------------------
+115886|Info:    [ASUS ROG STRIX B650E-F GAMING WIFI] Registering RGB controller
+115944|Info:    [Corsair Lighting Node Core] Registering RGB controller
+116057|Info:    [Corsair Commander Core] Registering RGB controller
+116057|Info:    ------------------------------------------------------
+116057|Info:    |              Detecting other devices               |
+116057|Info:    ------------------------------------------------------
+116058|Info:    ------------------------------------------------------
+116058|Info:    |                Detection completed                 |
+116058|Info:    ------------------------------------------------------
+116058|Dialog:  <h2>WARNING:</h2><p>One or more I2C/SMBus interfaces failed to initialize.</p><p>RGB DRAM modules and some motherboards' onboard RGB lighting will not be available without I2C/SMBus.</p><p>On Linux, this is usually because the i2c-dev module is not loaded.  You must load the i2c-dev module along with the correct i2c driver for your motherboard.  This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p>
