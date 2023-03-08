@@ -22,8 +22,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
+	{ "jetbrains-toolbox",     NULL,       NULL,       0,            True,        -1 },
+	{ "firefox-developer-edition",  NULL,       NULL,       1 << 8,       False,       -1 },
 };
 
 /* layout(s) */
@@ -56,8 +56,8 @@ static const char *termcmd[]  = { "kitty", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ WINKEY,                       XK_b,      spawn,          SHCMD("firefox") },
-	{ WINKEY,                       XK_e,      spawn,          SHCMD("sublime_text") },
+	{ WINKEY,                       XK_w,      spawn,          SHCMD("firefox-developer-edition") },
+	{ WINKEY,                       XK_e,      spawn,          SHCMD("nvim") },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
