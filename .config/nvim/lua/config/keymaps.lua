@@ -11,6 +11,7 @@ if not (dap_ok and dap_ui_ok) then
   return
 end
 
+-- flutter maps
 keymap("n", "<leader>flo", "<cmd>FlutterOutlineToggle<cr>", { desc = "Toggle Flutter Outline" })
 keymap("n", "<leader>fld", "<cmd>FlutterDevices<cr>", { desc = "Toggle Flutter Devices" })
 keymap("n", "<leader>fle", "<cmd>FlutterEmulators<cr>", { desc = "Toggle Flutter Emulators" })
@@ -18,6 +19,7 @@ keymap("n", "<leader>flrs", "<cmd>FlutterRestart<cr>", { desc = "Flutter Restart
 keymap("n", "<leader>flrl", "<cmd>FlutterReload<cr>", { desc = "Flutter Reload" })
 keymap("n", "<leader>flq", "<cmd>FlutterQuit<cr>", { desc = "Flutter Quit" })
 
+-- dap maps
 vim.fn.sign_define("DapBreakpoint", { text = "🐞" })
 
 -- Start debugging session
@@ -47,3 +49,10 @@ keymap("n", "<localleader>de", function()
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-w>=", false, true, true), "n", false)
   require("notify")("Debugger session ended", "warn")
 end, { desc = "End debugger session" })
+
+-- neotree
+keymap("n", "<leader>ntrf", "<cmd>Neotree left %:p:h:h %:p<cr>", { desc = "NeoTree Reveal File" })
+keymap("n", "<leader>ntsb", "<cmd>Neotree float buffers<cr>", { desc = "NeoTree Show Buffers" })
+keymap("n", "<leader>ntcb", "<cmd>Neotree close buffers<cr>", { desc = "NeoTree Close Buffers" })
+keymap("n", "<leader>ntsg", "<cmd>Neotree float git_status<cr>", { desc = "NeoTree Show Git Status" })
+keymap("n", "<leader>ntcb", "<cmd>Neotree close git_status<cr>", { desc = "NeoTree Close Git Status" })
