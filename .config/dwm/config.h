@@ -39,9 +39,9 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
-#define WINKEY Mod4Mask
-#define TAGKEYS(KEY,TAG) \
+define MODKEY Mod4Mask
+define ALTKEY Mod1Mask
+define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
 	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
@@ -56,8 +56,8 @@ static const char *termcmd[]  = { "kitty", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ WINKEY,                       XK_w,      spawn,          SHCMD("firefox-developer-edition") },
-	{ WINKEY,                       XK_e,      spawn,          SHCMD("nvim") },
+	{ MODKEY,                       XK_w,      spawn,          SHCMD("w") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("nvim") },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -81,7 +81,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_1,                      0)
+  TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
 	TAGKEYS(                        XK_4,                      3)
