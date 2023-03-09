@@ -56,3 +56,6 @@ keymap("n", "<leader>ntsb", "<cmd>Neotree float buffers<cr>", { desc = "NeoTree 
 keymap("n", "<leader>ntcb", "<cmd>Neotree close buffers<cr>", { desc = "NeoTree Close Buffers" })
 keymap("n", "<leader>ntsg", "<cmd>Neotree float git_status<cr>", { desc = "NeoTree Show Git Status" })
 keymap("n", "<leader>ntcb", "<cmd>Neotree close git_status<cr>", { desc = "NeoTree Close Git Status" })
+
+-- rnvimr
+keymap("n", "<leader>ro", "<cmd>RnvimrToggle<cr>", { desc = "NeoTree Close Git Status" })
