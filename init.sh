@@ -19,3 +19,8 @@ done
 rm -rf ~/.wallpapers
 mkdir ~/.wallpapers
 ln -s "$currentPath"/wallpapers/* ~/.wallpapers
+
+
+rm ~/.local/bin/java-lsp
+
+ln -s "$currentPath"/.local/bin/java-lsp ~/.local/bin/java-lsp
