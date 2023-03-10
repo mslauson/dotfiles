@@ -1,13 +1,13 @@
 local M = {}
 
 local home_dir = os.getenv("HOME")
-local jdk17_dir = "/usr/lib/jvm/java-17-openjdk"
-local jdk19_dir = "/usr/lib/jvm/java-19-openjdk"
+local jdk8_dir = os.getenv("JAVA_HOME_8")
+local jdk17_dir = os.getenv("JAVA_HOME_17")
 local home = vim.env.HOME
 local maven_home = vim.env.MAVEN_HOME
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 local workspace_dir = home .. "/.cache/jdtls_workspaces/" .. project_name
-local lombokjar = home_dir .. "/.m2/repository/org/projectlombok/lombok/lombok.jar"
+local lombokjar = home_dir .. "/installs/lombok.jar"
 local eclipse_java_google_style = vim.fn.stdpath("config") .. "/rules/eclipse-java-google-style.xml"
 local jars = vim.fn.stdpath("data") .. "/jars/"
 -- local util = require "lspconfig.util"
@@ -216,32 +216,17 @@ local servers = {
           runtimes = {
             {
               name = "JavaSE-1.8",
-              path = "/usr/lib/jvm/java-18-jdk/",
+              path = jdk8_dir,
             },
-            {
-              name = "JavaSE-11",
-              path = "/usr/lib/jvm/11.0.6.j9-adpt/",
-            },
-            { name = "JavaSE-17", path = vim.env.JAVA_HOME },
-            {
-              name = "JavaSE-18",
-              path = "/usr/lib/jvm/java-18-jdk/",
-            },
-          },
-        },
-        format = {
-          settings = {
-            url = eclipse_java_google_style,
-            profile = "GoogleStyle",
+            --            {
+            --              name = "JavaSE-11",
+            --              path = "/usr/lib/jvm/11.0.6.j9-adpt/",
+            --            },
+            { name = "JavaSE-17", path = jdk17_dir },
           },
         },
       },
     },
-    init_options = {
-      bundles = bundles,
-      extendedClientCapabilities = extendedClientCapabilities,
-    },
-
     flags = {
       allow_incremental_sync = true,
       debounce_text_changes = 150,
