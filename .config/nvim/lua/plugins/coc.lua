@@ -1,1 +1,3 @@
--- return { { "neoclide/coc.nvim", branch = "release" },
+return {
+  { "neoclide/coc.nvim", branch = "release" },
+}
