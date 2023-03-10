@@ -1,23 +1,6 @@
-for _, source in ipairs {
-  "astronvim.bootstrap",
-  "astronvim.options",
-  "astronvim.lazy",
-  "astronvim.autocmds",
-  "astronvim.mappings",
-} do
-  local status_ok, fault = pcall(require, source)
-  if not status_ok then vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault) end
-end
-
---if astronvim.default_colorscheme then
--- if not pcall(vim.cmd.colorscheme, astronvim.default_colorscheme) then
---   require("astronvim.utils").notify("Error setting up colorscheme: " .. astronvim.default_colorscheme, "error")
--- end
---end
-
-require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
-
-require("catppuccin").setup {
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
+require("catppuccin").setup({
   flavour = "macchiato", -- latte, frappe, macchiato, mocha
   background = { -- :h background
     light = "latte",
@@ -58,7 +41,10 @@ require("catppuccin").setup {
     mini = false,
     -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
   },
-}
+})
 
 -- setup must be called before loading
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme("catppuccin")
+
+--remap keys
+vim.keymap.set("i", "jh", "<ESC>", { noremap = true })
