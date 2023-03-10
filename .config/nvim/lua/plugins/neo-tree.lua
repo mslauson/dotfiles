@@ -48,9 +48,9 @@ return {
         for i, result in pairs(results) do
           if result.val and result.val ~= "" then
             vim.list_extend(messages, {
-              { ("%s."):format(i), "Identifier" },
+              { ("%s."):format(i),           "Identifier" },
               { (" %s: "):format(result.msg) },
-              { result.val, "String" },
+              { result.val,                  "String" },
               { "\n" },
             })
           end
@@ -114,10 +114,21 @@ return {
         },
       },
       filesystem = {
+        enableFocusedFile = true,
         follow_current_file = true,
-        hijack_netrw_behavior = "open_current",
         use_libuv_file_watcher = true,
-        commands = global_commands,
+        hijack_netrw_behavior = "open_current",
+        filtered_items = {
+          always_show = {
+            ".gitinclude",
+            ".gitignore",
+            ".gitmodules",
+            ".config",
+            ".profile",
+            ".zshrc",
+            ".zshrc_history",
+          },
+        },
       },
       buffers = { commands = global_commands },
       git_status = { commands = global_commands },
