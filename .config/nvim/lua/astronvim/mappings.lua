@@ -383,7 +383,7 @@ if is_available "flutter-tools.nvim" then
   maps.n["<leader>fd"] = { "<cmd>FlutterDevices<cr>", desc = "Flutter: Devices" }
   maps.n["<leader>fe"] = { "<cmd>FlutterEmulators<cr>", desc = "Flutter: Emulators" }
   maps.n["<leader>fv"] = { "<cmd>FlutterVersion<cr>", desc = "Flutter: Version" }
-  maps.n["<leader>fo"] = { "<cmd>FlutterOpenEmulator<cr>", desc = "Flutter: Open Emulator" }
+  maps.n["<leader>fto"] = { "<cmd>FlutterOutlineToggle<cr>", desc = "Flutter: Toggle Outline" }
   maps.n["<leader>fg"] = { "<cmd>FlutterGetPackages<cr>", desc = "Flutter: Get Packages" }
   maps.n["<leader>fp"] = { "<cmd>FlutterPubGet<cr>", desc = "Flutter: Pub Get" }
   maps.n["<leader>fa"] = { "<cmd>FlutterAnalyze<cr>", desc = "Flutter: Analyze" }
