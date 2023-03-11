@@ -41,6 +41,10 @@ keymap("n", "<localleader>dC", function()
   require("notify")("Breakpoints cleared", "warn")
 end, { desc = "Clear breakpoints" })
 
+keymap("n", "<localleader>dt", function()
+  require("dapui").toggle()
+end, { desc = "Toggle Debugger UI" })
+
 -- Close debugger and clear breakpoints
 keymap("n", "<localleader>de", function()
   dap.clear_breakpoints()
