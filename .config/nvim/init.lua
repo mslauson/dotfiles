@@ -16,9 +16,10 @@ if astronvim.default_colorscheme then
 end
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
-require("catppuccin").setup({
+require("catppuccin").setup {
   flavour = "macchiato", -- latte, frappe, macchiato, mocha
-  background = { -- :h background
+  background = {
+    -- :h background
     light = "latte",
     dark = "mocha",
   },
@@ -31,7 +32,7 @@ require("catppuccin").setup({
     percentage = 0.15,
   },
   no_italic = false, -- Force no italic
-  no_bold = false, -- Force no bold
+  no_bold = false,   -- Force no bold
   styles = {
     comments = { "italic" },
     conditionals = { "italic" },
@@ -57,8 +58,8 @@ require("catppuccin").setup({
     mini = false,
     -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
   },
-})
+}
 
 -- setup must be called before loading
-vim.cmd.colorscheme("catppuccin")
-require("flutter-tools").setup({})
+vim.cmd.colorscheme "catppuccin"
+require("flutter-tools").setup {}
