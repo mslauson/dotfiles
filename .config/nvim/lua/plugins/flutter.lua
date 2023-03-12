@@ -2,6 +2,7 @@ return {
   {
     "akinsho/flutter-tools.nvim",
     dependencies = "nvim-lua/plenary.nvim",
+    enabled = false,
     config = function()
       require("flutter-tools").setup({
         experimental = {
