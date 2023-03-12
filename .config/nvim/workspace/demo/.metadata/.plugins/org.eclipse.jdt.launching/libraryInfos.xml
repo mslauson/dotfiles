@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="/usr/lib/jvm/java-19-openjdk" version="19.0.2"/>
+    <libraryInfo home="/usr/lib/jvm/java-17-openjdk" version="17.0.6"/>
+</libraryInfos>

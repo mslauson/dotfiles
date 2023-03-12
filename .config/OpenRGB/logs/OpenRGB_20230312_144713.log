@@ -1,0 +1,58 @@
+    OpenRGB v0.8
+    Commit:  from 
+    Launched: 20230312_144713
+====================================================================================================
+
+0     |Info:    Found file: default.orp attempting to validate header
+0     |Info:    Valid v3 profile found for default
+1004  |Info:    ------------------------------------------------------
+1004  |Info:    |               Start device detection               |
+1004  |Info:    ------------------------------------------------------
+1004  |Info:    Initializing HID interfaces: Success
+1009  |Info:    ------------------------------------------------------
+1009  |Info:    |             Detecting I2C interfaces               |
+1009  |Info:    ------------------------------------------------------
+1009  |Info:    Registering I2C interface: /dev/i2c-3 Device 1022:790B Subsystem: 1043:8877
+1009  |Info:    Registering I2C interface: /dev/i2c-10 Device 1002:73BF Subsystem: 1EAE:6701
+1009  |Info:    Registering I2C interface: /dev/i2c-1 Device 1002:73A4 Subsystem: 1002:0408
+1009  |Info:    Registering I2C interface: /dev/i2c-8 Device 1002:73BF Subsystem: 1EAE:6701
+1009  |Info:    Registering I2C interface: /dev/i2c-15 Device 1002:164E Subsystem: 1043:8877
+1009  |Info:    Registering I2C interface: /dev/i2c-6 Device 1002:73BF Subsystem: 1EAE:6701
+1009  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1009  |Info:    Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+1009  |Info:    Registering I2C interface: /dev/i2c-4 Device 1022:790B Subsystem: 1043:8877
+1009  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1010  |Info:    Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+1010  |Info:    Registering I2C interface: /dev/i2c-2 Device 1022:790B Subsystem: 1043:8877
+1010  |Info:    Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+1010  |Info:    Registering I2C interface: /dev/i2c-9 Device 1002:73BF Subsystem: 1EAE:6701
+1010  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1010  |Info:    Registering I2C interface: /dev/i2c-16 Device 0000:0000 Subsystem: 0000:0000
+1010  |Info:    Registering I2C interface: /dev/i2c-7 Device 1002:73BF Subsystem: 1EAE:6701
+1010  |Info:    Registering I2C interface: /dev/i2c-14 Device 1002:164E Subsystem: 1043:8877
+1010  |Info:    Registering I2C interface: /dev/i2c-5 Device 1002:73BF Subsystem: 1EAE:6701
+1010  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1010  |Info:    Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+1010  |Info:    ------------------------------------------------------
+1010  |Info:    |               Detecting I2C devices                |
+1010  |Info:    ------------------------------------------------------
+1808  |Info:    ------------------------------------------------------
+1808  |Info:    |               Detecting I2C PCI devices            |
+1808  |Info:    ------------------------------------------------------
+1808  |Info:    ------------------------------------------------------
+1808  |Info:    |               Detecting HID devices                |
+1808  |Info:    ------------------------------------------------------
+1892  |Info:    [ASUS ROG STRIX B650E-F GAMING WIFI] Registering RGB controller
+1949  |Info:    [Corsair Lighting Node Core] Registering RGB controller
+2098  |Info:    [Corsair Commander Core] Registering RGB controller
+2183  |Info:    [Corsair ST100 RGB] Registering RGB controller
+2183  |Info:    ------------------------------------------------------
+2183  |Info:    |              Detecting other devices               |
+2183  |Info:    ------------------------------------------------------
+2194  |Info:    ------------------------------------------------------
+2194  |Info:    |                Detection completed                 |
+2194  |Info:    ------------------------------------------------------
+2194  |Info:    Profile loading: Succeeded for ASUS ROG STRIX B650E-F GAMING WIFI @ HID: /dev/hidraw3
+2194  |Info:    Profile loading: Succeeded for Corsair Lighting Node Core @ HID: /dev/hidraw4
+2194  |Info:    Profile loading: Succeeded for Corsair Commander Core @ HID: /dev/hidraw8
+2194  |Info:    Profile loading: FAILED! for Corsair ST100 RGB @ HID: /dev/hidraw1
