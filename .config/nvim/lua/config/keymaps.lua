@@ -66,4 +66,36 @@ keymap("n", "<leader>ntsg", "<cmd>Neotree float git_status<cr>", { desc = "NeoTr
 keymap("n", "<leader>ntcb", "<cmd>Neotree close git_status<cr>", { desc = "NeoTree Close Git Status" })
 
 -- rnvimr
-keymap("n", "<leader>ro", "<cmd>RnvimrToggle<cr>", { desc = "NeoTree Close Git Status" })
+keymap("n", "<leader>ro", "<cmd>RnvimrToggle<cr>", { desc = "Ranger Toggle" })
+
+-- automation (automaton.nvim)
+--
+
+keymap.set("n", "<F5>", "<CMD>Automaton launch default<CR>")
+keymap.set("n", "<F6>", "<CMD>Automaton debug default<CR>")
+keymap.set("n", "<F8>", "<CMD>Automaton tasks default<CR>")
+
+keymap.set("n", "<leader>aC", "<CMD>Automaton create<CR>")
+keymap.set("n", "<leader>aI", "<CMD>Automaton init<CR>")
+keymap.set("n", "<leader>aL", "<CMD>Automaton load<CR>")
+
+keymap.set("n", "<leader>ac", "<CMD>Automaton config<CR>")
+keymap.set("n", "<leader>ar", "<CMD>Automaton recents<CR>")
+keymap.set("n", "<leader>aw", "<CMD>Automaton workspaces<CR>")
+keymap.set("n", "<leader>aj", "<CMD>Automaton jobs<CR>")
+keymap.set("n", "<leader>al", "<CMD>Automaton launch<CR>")
+keymap.set("n", "<leader>ad", "<CMD>Automaton debug<CR>")
+keymap.set("n", "<leader>at", "<CMD>Automaton tasks<CR>")
+
+keymap.set("n", "<leader>aol", "<CMD>Automaton open launch<CR>")
+keymap.set("n", "<leader>aov", "<CMD>Automaton open variables<CR>")
+keymap.set("n", "<leader>aot", "<CMD>Automaton open tasks<CR>")
+keymap.set("n", "<leader>aoc", "<CMD>Automaton open config<CR>")
+
+-- visual Mode
+keymap.set("v", "<F5>", "<CMD><C-U>Automaton launch default<CR>")
+keymap.set("v", "<F6>", "<CMD><C-U>Automaton debug default<CR>")
+keymap.set("v", "<F8>", "<CMD><C-U>Automaton tasks default<CR>")
+keymap.set("v", "<leader>al", "<CMD><C-U>Automaton launch<CR>")
+keymap.set("v", "<leader>ad", "<CMD><C-U>Automaton debug<CR>")
+keymap.set("v", "<leader>at", "<CMD><C-U>Automaton tasks<CR>")
