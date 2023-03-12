@@ -10,8 +10,10 @@ local rule_dir = nvim_dir .. "/rule/"
 local java_settings_url = rule_dir .. "settings.prefs"
 local java_format_style_rule = rule_dir .. "eclipse-java-google-style.xml"
 local java_debug_jar = fn.stdpath("data") .. "/mason/packages/java-debug-adapter/extension/server/*.jar"
+local equinox_jar = home_dir .. "/.local/share/nvim/mason/packages/jdtls/plugins/org.eclipse.equinox.launcher_*.jar"
 local workspace_root_dir = nvim_dir .. "/workspace/"
 local workspace_dir = workspace_root_dir .. project_name
+local lombok_jar = home_dir .. "/installs/lombok.jar"
 local lsp = require("plugins.lsp")
 
 local on_attach = function(client, bufnr)
@@ -30,26 +32,26 @@ local is_file_exist = function(path)
   local f = io.open(path, "r")
   return f ~= nil and io.close(f)
 end
-
-local get_lombok_javaagent = function()
-  local lombok_dir = home_dir .. "/installs/lombok.jar"
-  local lombok_versions = io.popen('ls -1 "' .. lombok_dir .. '" | sort -r')
-  if lombok_versions ~= nil then
-    local lb_i, lb_versions = 0, {}
-    for lb_version in lombok_versions:lines() do
-      lb_i = lb_i + 1
-      lb_versions[lb_i] = lb_version
-    end
-    lombok_versions:close()
-    if next(lb_versions) ~= nil then
-      local lombok_jar = fn.expand(string.format("%s%s/*.jar", lombok_dir, lb_versions[1]))
-      if is_file_exist(lombok_jar) then
-        return string.format("--jvm-arg=-javaagent:%s", lombok_jar)
-      end
-    end
-  end
-  return ""
-end
+--
+--local get_lombok_javaagent = function()
+--  local lombok_dir = home_dir .. "/installs/lombok.jar"
+--  local lombok_versions = io.popen('ls -1 "' .. lombok_dir .. '" | sort -r')
+--  if lombok_versions ~= nil then
+--    local lb_i, lb_versions = 0, {}
+--    for lb_version in lombok_versions:lines() do
+--      lb_i = lb_i + 1
+--      lb_versions[lb_i] = lb_version
+--    end
+--    lombok_versions:close()
+--    if next(lb_versions) ~= nil then
+--      local lombok_jar = fn.expand(string.format("%s%s/*.jar", lombok_dir, lb_versions[1]))
+--      if is_file_exist(lombok_jar) then
+--        return string.format("--jvm-arg=-javaagent:%s", lombok_jar)
+--      end
+--    end
+--  end
+--  return ""
+--end
 
 local get_java_debug_jar = function()
   local jdj_full_path = fn.expand(java_debug_jar)
@@ -59,31 +61,45 @@ local get_java_debug_jar = function()
   return ""
 end
 
-local get_cmd = function()
-  local cmd = {
-
-    -- 💀
-    "jdtls",
-  }
-
-  local lombok_javaagent = get_lombok_javaagent()
-  if lombok_javaagent ~= "" then
-    table.insert(cmd, lombok_javaagent)
-  end
-
-  -- 💀
-  -- See `data directory configuration` section in the README
-  table.insert(cmd, "-data")
-  table.insert(cmd, workspace_dir)
-
-  return cmd
-end
+--local get_cmd = function()
+--  local cmd = {
+--
+--    -- 💀
+--    "jdtls",
+--  }
+--
+--  local lombok_javaagent = get_lombok_javaagent()
+--  if lombok_javaagent ~= "" then
+--    table.insert(cmd, lombok_javaagent)
+--  end
+--
+--  -- 💀
+--  -- See `data directory configuration` section in the README
+--  table.insert(cmd, "-data")
+--  table.insert(cmd, workspace_dir)
+--
+--  return cmd
+--end
 
 -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
 -- Watch out for the 💀, it indicates that you must adjust something.
 local config = {
-  cmd = get_cmd(),
-
+  --cmd = get_cmd(),
+  cmd = {
+    "java",
+    '-Declipse.application=org.eclipse.jdt.ls.core.id1',
+    '-Dosgi.bundles.defaultStartLevel=4',
+    '-Declipse.product=org.eclipse.jdt.ls.core.product',
+    '-Dlog.protocol=true',
+    '-Dlog.level=ALL',
+    '-javaagent:' .. lombok_jar,
+    '-Xms2g',
+    '--add-modules=ALL-SYSTEM',
+    '--add-opens', 'java.base/java.util=ALL-UNNAMED',
+    '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
+    '-jar', equinox_jar,
+    '-data', workspace_dir,
+  },
   -- 💀
   -- This is the default if not provided, you can remove it. Or adjust as needed.
   -- One dedicated LSP server & client will be started per unique root_dir

@@ -15,8 +15,8 @@ INDEX VERSION 1.132+/home/matthewslauson/custom/dotfiles/.config/nvim/workspace/
 1424498782.index
 3167619750.index
 2775277475.index
-1021797769.index
 890512370.index
+1021797769.index
 49728618.index
 3389141303.index
 1464502628.index

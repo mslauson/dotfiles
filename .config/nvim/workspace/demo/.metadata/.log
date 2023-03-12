@@ -4650,3 +4650,156 @@ Caused by: java.lang.OutOfMemoryError: Java heap space
 	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:494)
 	at org.eclipse.jdt.internal.core.search.processing.JobManager$$Lambda$162/0x000000080034da40.run(Unknown Source)
 	... 1 more
+!SESSION 2023-03-12 15:54:29.650 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/matthewslauson/.config/nvim/workspace/demo
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.246
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.309
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.324
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.325
+!MESSAGE Initializing Java Language Server 1.20.0.202302201605
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.336
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.336
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.edit.handlePasteEvent, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.337
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.337
+!MESSAGE Non-Static Commands: [vscode.java.checkProjectSettings, vscode.java.isOnClasspath, vscode.java.fetchUsageData, vscode.java.validateLaunchConfig, vscode.java.resolveInlineVariables, vscode.java.resolveClassFilters, vscode.java.resolveMainMethod, vscode.java.resolveClasspath, vscode.java.resolveBuildFiles, vscode.java.resolveMainClass, vscode.java.updateDebugSettings, vscode.java.resolveSourceUri, vscode.java.fetchPlatformSettings, vscode.java.buildWorkspace, vscode.java.startDebugSession, vscode.java.inferLaunchCommandLength, vscode.java.resolveElementAtSelection, vscode.java.resolveJavaExecutable]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.338
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.339
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.339
+!MESSAGE ProjectRegistryRefreshJob finished 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.339
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.347
+!MESSAGE Started org.eclipse.buildship.core 8ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.355
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.655
+!MESSAGE RepositoryRegistryUpdateJob finished 305ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.865
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.931
+!MESSAGE Workspace initialized in 580ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.944
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.945
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.945
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.967
+!MESSAGE >> java/buildWorkspace (incremental)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.970
+!MESSAGE >> New configuration: {java.settings.url=/home/matthewslauson/.config/nvim/rule/settings.prefs, java={sources={organizeImports={starThreshold=9999.0, staticStarThreshold=9999.0}}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useInstanceof=true, useJava7Objects=true}}, contentProvider={preferred=fernflower}, signatureHelp={enabled=true}, format={settings={url=/home/matthewslauson/.config/nvim/rule/eclipse-java-google-style.xml, profile=GoogleStyle}}, configuration={runtimes=[{name=JavaSE-17, path=/usr/lib/jvm/java-17-openjdk}, {name=JavaSE-19, path=/usr/lib/jvm/java-19-openjdk}]}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.971
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.973
+!MESSAGE >> New configuration: {java.settings.url=/home/matthewslauson/.config/nvim/rule/settings.prefs, java={sources={organizeImports={starThreshold=9999.0, staticStarThreshold=9999.0}}, implementationsCodeLens={enabled=true}, referencesCodeLens={enabled=true}, codeGeneration={useBlocks=true, toString={codeStyle=STRING_BUILDER_CHAINED}, hashCodeEquals={useInstanceof=true, useJava7Objects=true}}, contentProvider={preferred=fernflower}, signatureHelp={enabled=true}, format={settings={url=/home/matthewslauson/.config/nvim/rule/eclipse-java-google-style.xml, profile=GoogleStyle}}, configuration={runtimes=[{name=JavaSE-17, path=/usr/lib/jvm/java-17-openjdk}, {name=JavaSE-19, path=/usr/lib/jvm/java-19-openjdk}]}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:30.973
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.070
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.070
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-03-12 15:54:31.449
+!MESSAGE Error occured while building workspace. Details: 
+ message: Syntax error, insert ";" to complete LocalVariableDeclarationStatement; code: 1610612976; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/DemoApplication.java; line: 12
+ message: Syntax error, insert ";" to complete LocalVariableDeclarationStatement; code: 1610612976; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/DemoApplication.java; line: 12
+ message: Syntax error, insert "}" to complete MethodBody; code: 1610612976; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/DemoApplication.java; line: 12
+ message: Syntax error on tokens, delete these tokens; code: 1610612969; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/DemoApplication.java; line: 1
+ message: Syntax error, insert "}" to complete ClassBody; code: 1610612976; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/DemoApplication.java; line: 8
+ message: Syntax error on tokens, Type expected instead; code: 1610612973; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/DemoApplication.java; line: 12
+ message: Syntax error on token "also", ; expected; code: 1610612940; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/DemoApplication.java; line: 12
+ message: Syntax error on token "specs", ; expected; code: 1610612940; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/DemoApplication.java; line: 12
+ message: The blank final field fake may not have been initialized; code: 33554513; resource: /home/matthewslauson/javaIsDumb/demo/src/main/java/com/example/demo/Test.java; line: 12
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.461
+!MESSAGE >> document/documentSymbol
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.462
+!MESSAGE >> document/documentSymbol
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2023-03-12 15:54:31.463
+!MESSAGE Command _java.reloadBundles.command not supported on client
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.493
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.645
+!MESSAGE begin problem for /Test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.646
+!MESSAGE 2 problems reported for /Test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.646
+!MESSAGE Validated 1. Took 143 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:31.675
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:35.100
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:36.985
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:42.234
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 15:54:42.242
+!MESSAGE >> document/documentSymbol
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 16:03:10.972
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 16:03:16.256
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 16:07:10.504
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 16:07:10.519
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 16:07:10.519
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2023-03-12 16:07:10.522
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:

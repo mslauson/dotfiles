@@ -245,6 +245,7 @@ local servers = {
   --      },
   --    },
   --  },
+  jdtls={},
   dockerls = {},
   -- graphql = {},
   bashls = {},
