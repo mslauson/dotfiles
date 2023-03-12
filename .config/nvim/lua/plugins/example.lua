@@ -11,7 +11,6 @@ if true then return {} end
 return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
-  { "akinsho/flutter-tools.nvim", dependencies = "nvim-lua/plenary.nvim" },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
@@ -147,6 +146,7 @@ return {
         "javascript",
         "json",
         "lua",
+        "dart",
         "markdown",
         "markdown_inline",
         "python",
