@@ -99,3 +99,8 @@ keymap("v", "<F8>", "<cmd><C-U>Automaton tasks default<CR>", { desc = "Automaton
 keymap("v", "<leader>al", "<cmd><C-U>Automaton launch<CR>", { desc = "Automaton launch" })
 keymap("v", "<leader>ad", "<cmd><C-U>Automaton debug<CR>", { desc = "Automaton debug" })
 keymap("v", "<leader>at", "<cmd><C-U>Automaton tasks<CR>", { desc = "Automaton tasks" })
+
+-- symbols-outline
+keymap("n", "<leader>cot", "<cmd>SymbolsOutline<cr>", { desc = "Symbols Outline" })
+keymap("n", "<leader>coo", "<cmd>SymbolsOutlineOpen<cr>", { desc = "Symbols Outline Open" })
+keymap("n", "<leader>coc", "<cmd>SymbolsOutlineClose<cr>", { desc = "Symbols Outline Close" })
