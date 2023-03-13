@@ -1,7 +1,7 @@
 return {
   {
     "Alexis12119/nightly.nvim",
-    -- lazy = true,
+    lazy = true,
     -- branch = "dev",
     priority = 1000,
     config = function()
@@ -29,7 +29,7 @@ return {
 
   {
     "catppuccin/nvim",
-    lazy = true,
+--     lazy = true,
     name = "catppuccin",
     priority = 1000,
     config = function()
