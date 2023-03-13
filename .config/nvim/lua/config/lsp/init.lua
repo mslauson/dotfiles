@@ -1,15 +1,5 @@
 local M = {}
 
-local home_dir = os.getenv("HOME")
-local jdk8_dir = os.getenv("JAVA_HOME_8")
-local jdk17_dir = os.getenv("JAVA_HOME_17")
-local home = vim.env.HOME
-local maven_home = vim.env.MAVEN_HOME
-local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
-local workspace_dir = home .. "/.cache/jdtls_workspaces/" .. project_name
-local lombokjar = home_dir .. "/installs/lombok.jar"
-local eclipse_java_google_style = vim.fn.stdpath("config") .. "/rules/eclipse-java-google-style.xml"
-local jars = vim.fn.stdpath("data") .. "/jars/"
 -- local util = require "lspconfig.util"
 
 local servers = {
@@ -245,7 +235,6 @@ local servers = {
   --      },
   --    },
   --  },
-  jdtls={},
   dockerls = {},
   -- graphql = {},
   bashls = {},
